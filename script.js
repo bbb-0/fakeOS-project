@@ -1,12 +1,11 @@
 document.body.style.overflow = 'hidden';
 
-
 // Dropdown
 
 function navDown() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
-  
+
   window.onclick = function(e) {
     if (!e.target.matches('.dropdown__button')) {
     let myDropdown = document.getElementById("myDropdown");
@@ -16,16 +15,7 @@ function navDown() {
     }
   }
 
-
 // Date / Time
-
-// let time = document.getElementById("display-time");
-
-// setInterval(() => {
-// let dt = new Date();
-// time.innerHTML = dt.toLocaleTimeString();
-// },1000)
-
 
 const displayTime = document.querySelector(".display-time");
 // Time
@@ -79,18 +69,9 @@ function updateDate() {
 }
 updateDate();
 
-
-/*
-https://www.w3schools.com/howto/howto_js_slideshow.asp
-*/
-
-
 // photo gallery
 
 const images = [...document.querySelectorAll('.modal-images')];
-
-// popup
-
 const popup = document.querySelector('.popup');
 const closeBtn = document.querySelector('.close-btn');
 const imageName = document.querySelector('.image-name');
@@ -99,7 +80,7 @@ const imageIndex = document.querySelector('.index');
 const leftArrow = document.querySelector('.left-arrow');
 const rightArrow = document.querySelector('.right-arrow');
 
-let index = 0; // will track our current image;
+let index = 0;
 
 images.forEach((item, i) => {
     item.addEventListener('click', () => {
@@ -127,16 +108,13 @@ leftArrow.addEventListener('click', () => {
 });
 
 rightArrow.addEventListener('click', () => {
-    if(index < 3){
+    if(index < 2){
         updateImage(index + 1);
     }
 });
 
-// Text notes
 const text = [...document.querySelectorAll('.modal-notes')];
-
 const notePopup = document.querySelector('.note-popup');
-
 const noteCloseBtn = document.querySelector('.note-close-btn');
 
 text.forEach((item, i) => {

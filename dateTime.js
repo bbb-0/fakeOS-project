@@ -1,20 +1,14 @@
-// Date / Time
-
-const displayTime = document.querySelector(".display-time");
-// Time
+export const displayTime = document.querySelector(".display-time");
 function showTime() {
   let time = new Date();
   displayTime.innerText = time.toLocaleTimeString("en-US", {hour: '2-digit', minute: '2-digit', hour12: true });
   setTimeout(showTime, 1000);
 }
-
 showTime();
 
-// Date
-function updateDate() {
+export const updateDate() {
   let today = new Date();
 
-  // return number
   let dayName = today.getDay(),
     dayNum = today.getDate(),
     month = today.getMonth();

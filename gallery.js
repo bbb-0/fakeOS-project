@@ -1,20 +1,16 @@
-// photo gallery
+export const images = [...document.querySelectorAll('.modal-images')];
 
-const images = [...document.querySelectorAll('.modal-images')];
-
-// popup
-
-const popup = document.querySelector('.popup');
-const closeBtn = document.querySelector('.close-btn');
-const imageName = document.querySelector('.image-name');
-const largeImage = document.querySelector('.large-image');
-const imageIndex = document.querySelector('.index');
-const leftArrow = document.querySelector('.left-arrow');
-const rightArrow = document.querySelector('.right-arrow');
+export const popup = document.querySelector('.popup');
+export const closeBtn = document.querySelector('.close-btn');
+export const imageName = document.querySelector('.image-name');
+export const largeImage = document.querySelector('.large-image');
+export const imageIndex = document.querySelector('.index');
+export const leftArrow = document.querySelector('.left-arrow');
+export const rightArrow = document.querySelector('.right-arrow');
 
 let index = 0; // will track our current image;
 
-images.forEach((item, i) => {
+ images.forEach((item, i) => {
     item.addEventListener('click', () => {
         updateImage(i);
         popup.classList.toggle('active');
