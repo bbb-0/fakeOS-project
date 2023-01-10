@@ -1,5 +1,10 @@
 # FakeOS - Project - PopOS Website
 
+- Project website: https://bbb-0.github.io/fakeOS-project/
+
+- Project Repository: https://github.com/bbb-0/fakeOS-project
+
+
 ## Project Overview
 
 This projects goal was to create a website that will replicate the look of an operating system. For this project I have chosen to try and replicate the look of the Pop!_OS linux distribution based on Ubuntu.
