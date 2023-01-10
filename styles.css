@@ -40,7 +40,7 @@ body {
   text-align: center;
   text-decoration: none;
 }
-.nav-bar:hover {
+.nav-bar :hover {
   background-color: rgba(145, 144, 152, 0.3);
   border-radius: 0.5rem;
 }
@@ -58,11 +58,11 @@ body {
   background-color: inherit;
   margin: 0;
 }
-.nav-bar__dropdown:hover {
+.nav-bar__dropdown :hover {
   background-color: rgba(51, 51, 51, 0.95);
   border-radius: 0.5rem;
 }
-.nav-bar__dropdown:focus {
+.nav-bar__dropdown :focus {
   background-color: rgba(145, 144, 152, 0.95);
   border-radius: 0.5rem;
 }
@@ -85,7 +85,7 @@ body {
   display: block;
   text-align: left;
 }
-.dropdown__content:hover {
+.dropdown__content :hover {
   background-color: rgba(43, 217, 254, 0.5);
 }
 
@@ -98,7 +98,7 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-*:focus {
+* :focus {
   outline: none;
 }
 
@@ -309,4 +309,12 @@ body {
   display: flex;
   justify-content: center;
   gap: 20px;
+}
+.footer-container .footer-container__apps ul :hover {
+  -webkit-animation: pulse;
+          animation: pulse;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  background-color: rgba(128, 128, 128, 0.3);
+  border-radius: 5px;
 }/*# sourceMappingURL=styles.css.map */

@@ -127,7 +127,7 @@ leftArrow.addEventListener('click', () => {
 });
 
 rightArrow.addEventListener('click', () => {
-    if(index < images.length - 1){
+    if(index < 3){
         updateImage(index + 1);
     }
 });
