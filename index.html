@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>FakeOS Project</title>
+</head>
+<body>
+<!-- Nav bar-->
+      <nav class="nav-bar" aria-label="main">
+        <a href="#">Applications</a>
+        <div class="date-time">
+          <div class="display-date">
+            <span id="day">day</span>,
+            <span id="daynum">00</span>
+            <span id="month">month</span>
+          </div>
+          <div class="display-time"></div>
+        </div>
+        <div class="nav-bar__dropdown">
+          <button class="dropdown__button" onclick="navDown()">Dropdown
+            <i class="fa fa-caret-down"></i>
+          </button>
+        <div class="dropdown__content" id="myDropdown">
+          <a href="#"> --Volume Slider-- </a>
+          <a href="#">System Settings</a>
+          <a href="#">Network / Wi-Fi</a>
+          <a href="#">Settings</a>
+          <a href="#">Lock</a>
+          <a href="#">Power Off / Logout</a>
+        </div>
+      </nav>
+
+<!-- App Tray -->
+    <div class="footer-container">
+        <footer class="footer-container__apps">
+          <ul>
+            <li>
+              <a href="#"> <img src="https://img.icons8.com/color/512/image.png" class="modal-images" width="50px"></a>
+            </li>
+            <li>
+              <a href="#"> <img src="./img/text-editor.svg" class="modal-notes" width="50px"></a>
+            </li>
+            <li>
+              <a href="#"> <img src="./img/contact.svg" width="50px"></a>
+            </li>
+          </ul>
+        </footer>
+    </div>
+
+<!-- pop up slideshow-->
+  <div class="popup">
+      <!-- top bar -->
+      <div class="top-bar">
+          <p class="image-name">img1.png</p>
+          <span class="close-btn"></span>
+      </div>
+      <!-- arrows -->
+      <button class="arrow-btn left-arrow"><img src="img/arrow.png" alt=""></button>
+      <button class="arrow-btn right-arrow"><img src="img/arrow.png" alt=""></button>
+      <!-- image -->
+      <img src="img/img1.png" class="large-image" alt="">
+      <!-- image-index -->
+      <h1 class="index">01</h1>
+  </div>
+
+<!-- The Modal -->
+<div class="note-popup">
+  <!-- Modal content -->
+  <div class="note-top-bar">
+    <p class="note-name">Notes</p>
+    <span class="note-close-btn"></span>
+  <div class="note-content">
+    <textarea style="width: 400px; height: 300px;" id='modalInput' placeholder="Enter Your Text Here..." maxLength='1000' ></textarea>
+  </div>
+</div>
+  
+<script src="./script.js"></script>
+</body>
+</html>
